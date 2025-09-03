@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MIGHTYSMS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <!-- Hamburger toggle (shown only on mobile) -->
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
+    <div class="logo">MIGHTYSMS</div>
+
+    <!-- Desktop menu -->
+    <nav>
+      <button type="button">Login</button>
+      <button type="button">Register</button>
+    </nav>
+
+    <!-- Mobile menu (hidden by default) -->
+    <div class="mobile-menu" role="menu">
+      <button class="nav-btn" type="button">Login</button>
+      <button class="nav-btn" type="button">Register</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" role="region" aria-label="Hero Section">
+      <h1>SMS delivered right to your browser.</h1>
+      <p>Reclaim your privacy. Get 2FA codes without giving your personal information to any service.</p>
+      <a href="#features">Get Started</a>
+    </section>
+
+    <section id="features" class="features" aria-label="Features">
+      <div class="feature">
+        <h2>Works with every service</h2>
+        <p>You get a real local wireless number with a randomly assigned area code. Access from browser or API.</p>
+      </div>
+      <div class="feature">
+        <h2>Non-VoIP USA numbers</h2>
+        <p>Many services check whether you have a VoIP number. We provide non-VoIP USA numbers that work everywhere.</p>
+      </div>
+      <div class="feature">
+        <h2>Lowest prices guarantee</h2>
+        <p>We monitor the competition and guarantee the best price, even for custom deals with other services.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 MIGHTYSMS
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    toggleBtn.addEventListener('click', () => {
+      mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+</body>
+</html>
